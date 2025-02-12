@@ -5,12 +5,12 @@ import Clock from "./clock";
 
 export default function App() {
   return (
-    <div>
-      <h1>HELLO!</h1>
+    <div >
+      <h1 className="font-bold text-8xl">HELLO!</h1>
       <hr />
-      <Counter initialValue={0} increment={1} />
-      {/* <Clicker/> */}
-      <Clock/>
+      {/* <Counter initialValue={0} increment={1} /> */}
+      <Clicker/>
+      {/* <Clock/> */}
     </div>
   );
 }
