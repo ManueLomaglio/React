@@ -12,6 +12,7 @@ export default function App() {
     <div>
       <h1>HELLO!
       </h1>
+      <hr />
       <AlertButton eventHandler={HandleOnClick}/>
     </div>
   );
