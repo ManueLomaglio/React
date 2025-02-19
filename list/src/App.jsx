@@ -1,14 +1,21 @@
-import Color from "./Color"
-
-
-
+import Color from "./Colors";
 
 function App() {
- const color=[{id:1 , name:"carl"},{id:2 , name:"esteban"},{id:3 , name:"xin yan"}]
-  return(
-    <Color color={color}/>
-  )
-  
+  return (
+    <main>
+      <h1>Lista di colori</h1>
+      <Color
+        colors={[
+          { id: 1, name: "green" },
+          { id: 2, name: "red" },
+          { id: 3, name: "blue" },
+          { id: 4, name: "yellow" },
+          { id: 5, name: "gray" },
+        ]}
+      />
+      ;
+    </main>
+  );
 }
 
-export default App
+export default App;

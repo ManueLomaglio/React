@@ -25,7 +25,7 @@ function Login({ onLogin }) {
   };
 
   return (
-    <form onSubmit={handleLogin}>
+    <form onSubmit={handleLogin} >
       <div>
         <input
           type="text"
@@ -55,7 +55,7 @@ function Login({ onLogin }) {
           Remember Me
         </label>
       </div>
-      <button type="submit" disabled={!formData.username || !formData.password}>
+      <button style={{background: formData.password.length<8?"red":"blue",color:"white"}} type="submit" disabled={!formData.username || !formData.password} >
         Login
       </button>
       <button type="button" onClick={handleReset}>
