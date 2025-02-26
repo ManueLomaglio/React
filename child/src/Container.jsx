@@ -7,7 +7,6 @@ function Container({ title, children }) {
   };
   return (
     <div className="container">
-      {" "}
       <h2 onClick={handleColapsed}>{title}</h2>
       {!collapsed && <div>{children}</div>}
     </div>

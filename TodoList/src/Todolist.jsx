@@ -7,18 +7,18 @@ export default function Todolist() {
   const add = () => {
     if (input.trim()) {
       // setTodos(todos.push(input));
-      setTodos([...todos, input]);
+      setTodos([...todos, input]);// op asincrona 
       setInput("");
-      console.log(todos);
     }
   };
-
+  console.log(todos);
+  
   const clear = () => {
     setTodos([]);
     console.log(todos);
   };
   const removeTodo = (index) => {
-    // setTodos(todos.splice(index,1))
+    // setTodos(todos.splice(index,1))//op non one line
 
     const newTodos = [...todos];
     newTodos.splice(index, 1);

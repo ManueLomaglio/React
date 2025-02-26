@@ -31,10 +31,10 @@ export default function ChatApp() {
       <div className="flex-1 overflow-y-auto space-y-2 p-2 border ">
         {messages.map((msg) => (
           <div
-            className={`max-w-xs p-2 text-white ${
+             className={`max-w-xs p-2 text-white ${
               msg.turn === "second"
-                ? "bg-blue-500 self-end text-right"
-                : "bg-gray-400 self-start text-left"
+                ? "bg-[rgb(140,105,236)] self-end text-right"
+                : "bg-[rgb(236,173,152)] self-start text-left"
             }`}>
             {msg.text}
           </div>

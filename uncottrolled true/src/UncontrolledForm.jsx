@@ -1,5 +1,5 @@
 export default function UncontrolledLogin() {
-    function handleFormSubmit(event,action) {
+    function handleFormSubmit(event) {
       event.preventDefault();
  
       const username = event.target.elements.namedItem("username").value;
@@ -19,10 +19,10 @@ export default function UncontrolledLogin() {
       event.preventDefault();
 
 
-      // const form = event.currentTarget.closest("form"); // Ensure we get the form
-      // if (!form) return;
+      const form = event.currentTarget.closest("form"); // Ensure we get the form
+      if (!form) return;
 
-    const formData = new FormData(event.target);
+    const formData = new FormData(form);
   
       const dataFromForm = {
         username: formData.get('username'),
