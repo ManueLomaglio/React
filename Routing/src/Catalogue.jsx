@@ -26,3 +26,5 @@ function Catalogue() {
   );
 }
 export default Catalogue;
+
+//link è la stessa cosa del tag a di html, ma ci permettere di navigare tra le pagine senza causare rendering inutili 

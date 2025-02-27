@@ -29,8 +29,8 @@ export default function ChatApp() {
   return (
     <div className="flex flex-col h-screen bg-gray-100 p-4">
       <div className="flex-1 overflow-y-auto space-y-2 p-2 border ">
-        {messages.map((msg) => (
-          <div
+        {messages.map((msg,index) => (
+          <div key={index}
              className={`max-w-xs p-2 text-white ${
               msg.turn === "second"
                 ? "bg-[rgb(140,105,236)] self-end text-right"

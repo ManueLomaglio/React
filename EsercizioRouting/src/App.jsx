@@ -9,15 +9,15 @@ function App() {
   return (
     <div>
       <h1>TEST APP ROUTING</h1>
-      <header>
-        <Link to="/">Home</Link> |<Link to="/counter">Counter</Link>|
+      <div>
+        <Link to="/">Home</Link> | <Link to="/counter">Counter</Link> | 
         <Link to="/users/Dar">GitHub User (Dar)</Link>
-      </header>
+      </div>
       <Routes>
         <Route path="/" element={<Welcome name="Manuel" />} />
         <Route path="/counter" element={<Counter />} />
         <Route path="/users" element={<GithubUserList />}>
-          <Route index element={<p>Add a user and select it</p>} />
+          <Route index element={<p> ADD USERS LIST</p>} />
           <Route path="/users/:username" element={<ShowGithubUser />} />
         </Route>
         <Route
@@ -25,7 +25,6 @@ function App() {
           element={
             <div>
               <p>Not found</p>
-
               <Link to="/">Go home</Link>
             </div>
           }></Route>

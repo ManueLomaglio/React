@@ -13,12 +13,12 @@ function App() {
   return (
     <Container
       title={
-        <div>
+        <header>
           <h1>my APP</h1>
           <div>
             <Link to="/">Home</Link> | <Link to="products">Products</Link>
           </div>
-        </div>
+        </header>
       }>
       <div>
         <Routes>
@@ -45,3 +45,6 @@ function App() {
 }
 
 export default App;
+//index è praticamente volore di default quando abbiamo un nesting di route. 
+// verrà mostrato quando nell'utrl saremo in catalogue/ ma non avremmo ancora richiesto nessun prodotto e quindi nell'url non ci sarà nessun reinderizzamento  
+//tramite link ad uno dei prodotti

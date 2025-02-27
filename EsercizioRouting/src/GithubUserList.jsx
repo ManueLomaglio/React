@@ -12,7 +12,8 @@ function GithubUserList() {
 
   return (
     <div>
-      <h2>GitHub Users</h2>
+      <Outlet />
+      <h2>Users List</h2>
       <ul>
         {users.map((user) => (
           <li key={user.id}>
@@ -20,7 +21,6 @@ function GithubUserList() {
           </li>
         ))}
       </ul>
-      <Outlet />
     </div>
   );
 }
